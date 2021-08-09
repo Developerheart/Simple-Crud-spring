@@ -29,7 +29,7 @@ public class Pessoa {
 
     private String nome;
 
-    @DateTimeFormat(fallbackPatterns = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataNascimento;
 
 
