@@ -42,7 +42,7 @@ public class PessoaController {
     }
 
     @GetMapping("rh/pessoa/{id}")
-    public String alterarPessoa(@PathVariable("id") UUID uuid, Model model) {
+    public String alterarPessoa(@PathVariable("id") Long uuid, Model model) {
 
         Optional<Pessoa> pessoaOpt = pessoaRepository.findById(uuid);
         if (pessoaOpt.isEmpty()) {
@@ -56,7 +56,7 @@ public class PessoaController {
     }
 
     @GetMapping("rh/pessoa/excluir/{id}")
-    public String excluirPessoa(@PathVariable("id") UUID uuid) {
+    public String excluirPessoa(@PathVariable("id") Long uuid) {
 
         Optional<Pessoa> pessoaOpt = pessoaRepository.findById(uuid);
         if (pessoaOpt.isEmpty()) {

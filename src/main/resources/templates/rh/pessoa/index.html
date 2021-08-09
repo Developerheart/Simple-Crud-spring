@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=2"/>
     <title>Sistema de Gestão de Pessoas</title>
 
-<!--     <th:block th:include="fragments/geral.html :: headerfiles">-->
-<!--            </th:block>-->
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
           crossorigin="anonymous">
 </head>
 <body>
-<!--<header th:insert="fragments/geral.html :: header"> </header>-->
 
 <div class="container my-2">
         <a th:href="@{/rh/pessoa/nova}" class="btn btn-primary btn-sm mb-3">Incluir Pessoa</a>
@@ -40,15 +38,7 @@
         </tr>
         </tbody>
     </table>
-    <!--    <nav aria-label="...">-->
-    <!--        <ul class="pagination">-->
-    <!--            <li th:if="${listaPessoas.totalPages > 0}" th:each="numeroPagina : ${numerosPaginas}"-->
-    <!--                th:class="${numeroPagina==listaPessoas.number + 1} ? 'page-item active' : 'page-item'">-->
-    <!--                <a class="page-link" th:href="@{/rh/pessoas(size=${listaPessoas.size}, page=${numeroPagina})}"-->
-    <!--                   th:text=${numeroPagina}></a>-->
-    <!--            </li>-->
-    <!--        </ul>-->
-    <!--    </nav>-->
+
 </div>
 </body>
 </html>
